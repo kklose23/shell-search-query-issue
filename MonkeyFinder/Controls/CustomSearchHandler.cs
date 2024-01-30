@@ -9,6 +9,13 @@ public class CustomSearchHandler : SearchHandler
 
     Placeholder = "Search...";
     ShowsResults = false;
+
+    ClearPlaceholderIcon = "scan_icon.png";
+    ClearPlaceholderEnabled = true;
+    ClearPlaceholderIcon.Parent = Application.Current.MainPage;
+
+    TextColor = Colors.Aqua;
+    PlaceholderColor = Colors.Aqua;
   }
 
   public void SetQuery(string searchText)
